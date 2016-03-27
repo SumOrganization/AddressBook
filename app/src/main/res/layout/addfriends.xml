@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent">
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:id="@+id/tv_nonewfriend"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="无新好友"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="50px"/>
+    <TextView
+        android:paddingLeft="10dp"
+        android:visibility="gone"
+        android:id="@+id/tv_newfriendlist"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="新好友列表"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:textSize="50px"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.001dip"
+        android:background="@color/gainsboro"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"></View>
+    <ListView
+
+        android:id="@+id/list_newfriends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>
